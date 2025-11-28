@@ -1,0 +1,20 @@
+**AI Development Guidelines**
+
+1. **Ethical Review**: All AI projects must undergo an initial ethical review by the AI Governance Committee, assessing impacts on privacy, fairness, and society.
+
+2. **Data Practices**:
+   - Collect only necessary data with consent and anonymization.
+   - Audit datasets for bias using tools like AIF360 or Fairlearn.
+   - Maintain data sheets documenting sources, preprocessing, and limitations.
+
+3. **Model Building**:
+   - Prioritize explainable models (e.g., decision trees over black-box neural nets where feasible).
+   - Incorporate fairness metrics into training objectives (e.g., demographic parity).
+
+4. **Testing and Validation**:
+   - Evaluate on holdout sets stratified by protected attributes.
+   - Run robustness tests against data drift and adversarial inputs.
+
+5. **Documentation**: Produce model cards including intended use, limitations, ethical considerations, and version history.
+
+6. **Approval Gates**: No deployment without sign-off from technical, legal, and ethics leads.
