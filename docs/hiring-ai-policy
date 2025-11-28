@@ -1,0 +1,28 @@
+**AI Development Guidelines - Hiring AI Tool**
+
+1. **Ethical Review**: 
+   - Assess impacts on equal opportunity, discrimination risks, and candidate privacy. 
+   - Flag protected attributes (gender, age, ethnicity).
+
+2. **Data Practices**:
+   - Use anonymized resumes/historical hiring data with explicit consent.
+   - Audit for disparate impact using metrics like equalized odds (threshold < 0.8).
+   - Data sheets must document demographic representation and sampling bias mitigation.
+
+3. **Model Building**:
+   - Optimize for balanced accuracy + fairness (demographic parity + equal opportunity).
+   - Include human override flags for top candidates and reject lists.
+
+4. **Testing and Validation**:
+   - Group-wise evaluation across gender, age, ethnicity (error rate disparity < 5%).
+   - Simulate resume keyword gaming and test temporal drift in job market trends.
+
+5. **Documentation**: 
+  - Model cards must include 
+      - adverse impact ratios, 
+      - false positive/negative rates by group, and 
+      - legal compliance statements (EEOC, GDPR).
+
+6. **Approval Gates**: 
+  - Requires HR legal review 
+  - diversity officer sign-off before deployment.
