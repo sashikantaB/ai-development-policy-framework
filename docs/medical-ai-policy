@@ -1,0 +1,30 @@
+**AI Development Guidelines - Medical Diagnostic AI**
+
+1. **Ethical Review**:
+  - Evaluate patient safety risks, misdiagnosis potential, and equitable access across demographics/conditions. 
+  - HIPAA/GDPR compliance mandatory.
+
+2. **Data Practices**:
+   - Use de-identified clinical data from diverse populations/hospitals.
+   - Validate data quality with clinical experts; audit for representation gaps (skin tone, age, comorbidities).
+   - Data sheets must include FDA 21 CFR Part 11 compliance and data drift monitoring plan.
+
+3. **Model Building**:
+   - Prioritize sensitivity/specificity over accuracy; calibrate per disease severity.
+   - Implement uncertainty quantification and clinician confidence scores.
+
+4. **Testing and Validation**:
+   - Prospective clinical validation on unseen patient cohorts.
+   - Test subpopulation performance (e.g., diabetes detection across BMI ranges, ethnicities).
+   - Validate against distribution shifts (new hospital protocols, equipment).
+
+5. **Documentation**: 
+   - Model cards must include 
+      - clinical trial results, 
+      - sensitivity analysis, 
+      - failure mode documentation, and 
+      - FDA SaMD classification.
+
+6. **Approval Gates**: 
+   - Requires IRB approval, clinician sign-off, and 
+   - regulatory submission (FDA 510(k)) before deployment.
